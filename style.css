@@ -50,7 +50,7 @@ header .menu-toggle {
   flex-direction: column;
   justify-content: center;
   gap: 0.75rem;
-  background: url(./assets/img/header-shapes\ mobile.png) 50% 50% no-repeat;
+  background: url(./assets/img/header-shapes\ mobile.png) 50% 0 no-repeat;
   min-height: 75vh;
   background-size: 100%;
   padding: 1rem;
