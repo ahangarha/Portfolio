@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
 
 :root {
   --neutrals: #172b4d;
@@ -70,7 +70,8 @@ header .menu-toggle {
   text-transform: uppercase;
   color: var(--primary-b300);
   margin: 0;
-  font-weight: normal;
+  font-size: 1rem;
+  font-weight: 500;
 }
 
 #hero ul {
@@ -80,7 +81,7 @@ header .menu-toggle {
   margin: 0;
   padding: 0;
   gap: 1.25rem;
-  font-size: 2rem;
+  font-size: 1.25rem;
 }
 
 #hero ul a {
