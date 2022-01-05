@@ -30,4 +30,4 @@ If you think I am on right track, give a ⭐️.
 
 ## 📝 License
 
-This project is [MIT](./MIT.md) licensed.
+This project is [MIT](./LICENSE) licensed.
