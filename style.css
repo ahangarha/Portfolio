@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+
+:root {
+  --neutrals-n800: #172b4d;
+  --neutrals-n600: #344563;
+  --neutrals-n400: #505f79;
+  --primary: #396df2;
+  --primary-b400: #6070ff;
+  --primary-b300: #7f8cff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-size: 16px;
+  color: var(--neutrals-n800);
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  height: 3rem;
+  padding: 0.25rem 1.5rem;
+}
+
+header .logo a {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: var(--primary-b400);
+  padding: 0.625rem 0.75px;
+  text-decoration: none;
+}
+
+header .menu-toggle {
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+#hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.75rem;
+  background: url(./assets/img/header-shapes\ mobile.png) 50% 0 no-repeat;
+  min-height: 75vh;
+  background-size: 100%;
+  padding: 1rem;
+}
+
+#hero h1 {
+  font-size: 2.5rem;
+  line-height: 3.25rem;
+  margin: 0;
+}
+
+#hero p {
+  margin: 0;
+  color: var(--neutrals-n600);
+}
+
+#hero h3 {
+  text-transform: uppercase;
+  color: var(--primary-b300);
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+#hero ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  gap: 1.25rem;
+  font-size: 1.25rem;
+}
+
+#hero ul a {
+  color: var(--neutrals-n400);
+}
