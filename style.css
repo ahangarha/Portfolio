@@ -1,8 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
 
 :root {
-  --neutrals: #172b4d;
-  --neutral-n400: #505f79;
+  --neutrals-n800: #172b4d;
+  --neutrals-n600: #344563;
+  --neutrals-n400: #505f79;
   --primary: #396df2;
   --primary-b400: #6070ff;
   --primary-b300: #7f8cff;
@@ -15,7 +16,7 @@
 body {
   margin: 0;
   font-size: 16px;
-  color: var(--neutrals);
+  color: var(--neutrals-n800);
   font-family: Poppins, Arial, Helvetica, sans-serif;
 }
 
@@ -64,6 +65,7 @@ header .menu-toggle {
 
 #hero p {
   margin: 0;
+  color: var(--neutrals-n600);
 }
 
 #hero h3 {
@@ -85,5 +87,5 @@ header .menu-toggle {
 }
 
 #hero ul a {
-  color: var(--neutral-n400);
+  color: var(--neutrals-n400);
 }
