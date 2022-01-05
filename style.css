@@ -23,13 +23,14 @@ header {
   align-items: center;
   position: relative;
   height: 3rem;
-  padding: 0 0.75rem;
+  padding: 0.25rem 1.5rem;
 }
 
 header .logo {
   font-size: 1.125rem;
   font-weight: 700;
   color: var(--primary-b400);
+  padding: 0.625rem, 0.75px;
 }
 
 header .menu-toggle {
