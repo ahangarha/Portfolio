@@ -32,7 +32,7 @@ header .logo {
   font-size: 1.125rem;
   font-weight: 700;
   color: var(--primary-b400);
-  padding: 0.625rem, 0.75px;
+  padding: 0.625rem 0.75px;
 }
 
 header .menu-toggle {
@@ -71,6 +71,7 @@ header .menu-toggle {
   margin: 0;
   font-weight: normal;
 }
+
 #hero ul {
   list-style: none;
   display: flex;
