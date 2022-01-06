@@ -4,8 +4,11 @@
   --neutrals-n800: #172b4d;
   --neutrals-n600: #344563;
   --neutrals-n400: #505f79;
+  --neutrals-n300: #5e6c84;
   --neutrals-n100: #7a869a;
   --neutrals-n50: #c1c7d0;
+  --neutrals-n40: #dfe1e6;
+  --neutrals-n10: #f7f7f9;
   --primary: #396df2;
   --primary-b50: #ebebff;
   --primary-b400: #6070ff;
@@ -14,6 +17,8 @@
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -213,4 +218,120 @@ header .menu-toggle {
 .works-card .info .action {
   display: flex;
   padding: 0.75rem 0;
+}
+
+#about {
+  background: white;
+  padding: 7.125rem 1.5rem;
+  border-top-right-radius: 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+#about .top {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+#about .top h2 {
+  font-size: 2.5rem;
+  line-height: 3.25rem;
+}
+
+#about .top p {
+  margin: 0;
+  color: var(--neutrals-n600);
+}
+
+#about .top h3 {
+  text-transform: uppercase;
+  color: var(--primary-b300);
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+#about .top ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  gap: 1.25rem;
+  font-size: 1.25rem;
+}
+
+#about .top ul a {
+  color: var(--neutrals-n400);
+}
+
+#about .top .action {
+  display: flex;
+}
+
+#about .skill-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul.skill-sets > li {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid var(--neutrals-n40);
+}
+
+ul.skill-sets > li .title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4.5rem;
+  padding: 0.75rem;
+}
+
+ul.skill-sets > li .title h4 {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: black;
+}
+
+ul.skill-sets > li i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  font-size: 1.5rem;
+  color: var(--neutrals-n300);
+}
+
+ul.skill-sets > li.active {
+  border-bottom: none;
+}
+
+ul.skill-sets > li.active i {
+  transform: rotate(90deg);
+}
+
+ul.skill-sets > li .skill-items {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin: 0.75rem;
+}
+
+ul.skill-sets > li .skill-items li {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: var(--neutrals-n10);
+  border-radius: 0.5rem;
+  padding: 0.75rem;
+}
+
+ul.skill-sets > li .skill-items li img {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
 }
