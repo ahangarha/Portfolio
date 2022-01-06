@@ -2,7 +2,7 @@
 
 # Portfolio
 
-> This is an ongoing project for making a professional potfolio
+> This is an ongoing project for making a professional portfolio
 
 ## Built With
 
@@ -22,11 +22,11 @@ By now, the project is a static HTML/CSS and doesn't need any steps for build.
 
 ## 🤝 Contributing
 
-As a educational project and at least at this stage I am not supposed to accept any PR. Yet I appreciate if you can report problems from [issues page](../../issues/).
+As an educational project at least at this stage I am not supposed to accept any PR. Yet I appreciate if you can report problems from [issues page](../../issues/).
 
 ## Show your support
 
-If you think I am on right track, give a ⭐️.
+If you think I am on the right track, give a ⭐️.
 
 ## 📝 License
 
