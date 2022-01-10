@@ -200,21 +200,15 @@ header .menu-toggle {
   line-height: 1.5rem;
 }
 
-.works-card .info ul.techs {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  gap: 0.5rem;
-  flex-wrap: wrap;
-}
-
-.works-card .info ul.techs li {
+.works-card .info .techs .skill-item {
   background: var(--primary-b50);
   color: var(--primary-b400);
   padding: 0.25rem 0.75rem;
   border-radius: 0.5rem;
   font-size: 0.75rem;
   font-weight: 500;
+  float: left;
+  margin-right: 0.5rem;
 }
 
 .works-card .info .action {
