@@ -96,15 +96,21 @@ header .menu-toggle {
 }
 
 #hero {
+  background: white url(./assets/img/header-shapes\ mobile.png) center 0 no-repeat;
+  min-height: 75vh;
+  background-size: 100%;
+  border-bottom-left-radius: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#hero .wrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 0.75rem;
-  background: white url(./assets/img/header-shapes\ mobile.png) 50% 0 no-repeat;
-  min-height: 75vh;
-  background-size: 100%;
   padding: 1rem;
-  border-bottom-left-radius: 5rem;
 }
 
 #hero h1 {
@@ -434,5 +440,14 @@ header .menu-toggle {
 
   header .menu-toggle {
     display: none;
+  }
+
+  #hero {
+    background: white url(./assets/img/Header\ bg.svg) center 0 no-repeat;
+    background-size: 100%;
+  }
+
+  #hero .wrapper {
+    width: 75%;
   }
 }
