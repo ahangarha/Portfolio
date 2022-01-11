@@ -62,13 +62,16 @@ body {
 }
 
 header {
+  background: white;
+}
+
+header .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: relative;
   height: 3rem;
   padding: 0.25rem 1.5rem;
-  background: white;
 }
 
 header .logo a {
@@ -77,6 +80,10 @@ header .logo a {
   color: var(--primary-b400);
   padding: 0.625rem 0.75px;
   text-decoration: none;
+}
+
+header nav {
+  display: none;
 }
 
 header .menu-toggle {
@@ -394,4 +401,38 @@ header .menu-toggle {
 
 #contact form .btn {
   align-self: start;
+}
+
+@media (min-width: 992px) {
+  .container > * {
+    max-width: 1155px;
+    margin: auto;
+  }
+
+  header {
+    height: 4.5rem;
+  }
+
+  header nav {
+    display: block;
+  }
+
+  #main-menu ul {
+    display: flex;
+    list-style: none;
+    gap: 0.625rem;
+  }
+
+  #main-menu a {
+    color: var(--neutrals-n600);
+    font-size: 0.9375rem;
+    font-weight: 500;
+    line-height: 1.25rem;
+    text-decoration: none;
+    padding: 0.625rem 0.75rem;
+  }
+
+  header .menu-toggle {
+    display: none;
+  }
 }
