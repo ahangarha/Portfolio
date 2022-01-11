@@ -239,6 +239,9 @@ header .menu-toggle {
   background: white;
   padding: 7.125rem 1.5rem;
   border-top-right-radius: 5rem;
+}
+
+#about .wrapper {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
@@ -468,5 +471,28 @@ header .menu-toggle {
 
   .works-card:nth-child(even) .info {
     order: -1;
+  }
+
+  #about .wrapper {
+    flex-direction: row;
+    gap: 1.5rem;
+  }
+
+  #about .top {
+    width: 40%;
+  }
+
+  #about .skill-list {
+    width: 60%;
+  }
+
+  #about ul.skill-sets > li .skill-items {
+    flex-direction: row;
+  }
+
+  #about ul.skill-sets > li .skill-items li {
+    flex-direction: column;
+    align-items: start;
+    min-width: 122px;
   }
 }
