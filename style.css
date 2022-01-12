@@ -470,22 +470,34 @@ header .menu-toggle {
   }
 
   .works-card {
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 1.375rem;
-  }
-
-  .works-card > img {
-    width: 50%;
-  }
-
-  .works-card > .info {
-    width: 50%;
     gap: 1.5rem;
     padding: 1.5rem;
   }
 
+  .works-card > .info {
+    gap: 1.5rem;
+    padding: 1.5rem;
+  }
+
+  .works-card > .info .title h2 {
+    font-size: 2.5rem;
+    line-height: 3.25rem;
+  }
+
+  .works-card .meta *{
+    font-size: 1.125rem;
+    font-weight: 500;
+  }
+
   .works-card:nth-child(even) .info {
     order: -1;
+  }
+
+  .works-card .info p.description {
+    font-size: 1rem;
   }
 
   #about {
