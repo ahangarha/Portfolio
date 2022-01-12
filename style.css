@@ -111,7 +111,7 @@ header .logo a {
   font-size: 1.125rem;
   font-weight: 700;
   color: var(--primary-b400);
-  padding: 0.625rem 0.75px;
+  padding: 0.625rem 0.75rem;
   text-decoration: none;
 }
 
