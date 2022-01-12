@@ -525,7 +525,7 @@ header .menu-toggle {
   }
 
   #hero {
-    background: white url(./assets/img/Header\ bg.svg) center 0 no-repeat;
+    background: white url(./assets/img/header-bg.svg) center 0 no-repeat;
     background-size: 100%;
     border-bottom-left-radius: 9rem;
     min-height: 100vh;
@@ -611,7 +611,7 @@ header .menu-toggle {
   #contact {
     background:
       var(--primary-b400)
-      url(./assets/img/contact-form\ -bg-shapes.svg) top 5rem center no-repeat;
+      url(./assets/img/contact-form-bg-shapes.svg) top 5rem center no-repeat;
     background-size: 90%;
     border-top-left-radius: 9rem;
   }
