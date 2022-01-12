@@ -46,6 +46,8 @@ body {
   text-decoration: none;
   background: white;
   cursor: pointer;
+  transition-property: color, background;
+  transition-duration: 300ms;
 }
 
 .btn:hover {
