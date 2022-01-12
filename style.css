@@ -12,6 +12,7 @@
   --neutrals-n10: #f7f7f9;
   --primary: #396df2;
   --primary-b50: #ebebff;
+  --primary-b200: #a7aeff;
   --primary-b400: #6070ff;
   --primary-b300: #7f8cff;
 }
@@ -160,6 +161,11 @@ header .menu-toggle {
   background: white;
   border: 1px solid #dfe1e6;
   border-radius: 1rem;
+}
+
+.works-card:hover {
+  border-color: var(--primary-b200);
+  box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
 }
 
 .works-card * {
