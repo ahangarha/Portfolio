@@ -451,6 +451,7 @@ header .menu-toggle {
     background: white url(./assets/img/Header\ bg.svg) center 0 no-repeat;
     background-size: 100%;
     border-bottom-left-radius: 9rem;
+    min-height: 100vh;
   }
 
   #hero .wrapper {
