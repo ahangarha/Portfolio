@@ -46,6 +46,8 @@ body {
   text-decoration: none;
   background: white;
   cursor: pointer;
+  transition-property: color, background;
+  transition-duration: 300ms;
 }
 
 .btn:hover {
@@ -68,6 +70,22 @@ body {
 
 header {
   background: white;
+}
+
+.navbar > * {
+  animation-duration: 1s;
+  animation-name: headerSlideDown;
+  animation-timing-function: ease-out;
+}
+
+@keyframes headerSlideDown {
+  0% {
+    transform: translateY(-6rem);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
 }
 
 header .navbar {
@@ -116,6 +134,24 @@ header .menu-toggle {
   justify-content: center;
   gap: 0.75rem;
   padding: 1rem;
+  animation-name: heroSlideUp;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-delay: 500ms;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+@keyframes heroSlideUp {
+  0% {
+    transform: translateY(6rem);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 #hero h1 {
@@ -165,6 +201,8 @@ header .menu-toggle {
   background: white;
   border: 1px solid #dfe1e6;
   border-radius: 1rem;
+  transition-duration: 300ms;
+  transition-property: border-color, box-shadow;
 }
 
 .works-card:hover {
@@ -296,6 +334,35 @@ header .menu-toggle {
 
 #about .top .action {
   display: flex;
+}
+
+#about .btn {
+  animation-name: shakeButton;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes shakeButton {
+  0% {
+    transform: translateX(3px);
+  }
+
+  2% {
+    transform: translateX(-6px);
+  }
+
+  4% {
+    transform: translateX(3px);
+  }
+
+  6% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
 }
 
 #about .skill-list ul {
