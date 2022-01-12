@@ -7,6 +7,9 @@
 ## Screenshots
 [![screenshot](screenshot-small.png)](screenshot-large.png)
 
+## Live
+A live version of this project can be [seen here](https://ahangarha.github.io/Portfolio/).
+
 ## Built With
 
 - HTML/CSS
