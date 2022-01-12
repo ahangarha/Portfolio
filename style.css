@@ -72,6 +72,22 @@ header {
   background: white;
 }
 
+.navbar > * {
+  animation-duration: 1s;
+  animation-name: headerSlideDown;
+  animation-timing-function: ease-out;
+}
+
+@keyframes headerSlideDown {
+  0% {
+    transform: translateY(-6rem);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
 header .navbar {
   display: flex;
   justify-content: space-between;
@@ -118,6 +134,24 @@ header .menu-toggle {
   justify-content: center;
   gap: 0.75rem;
   padding: 1rem;
+  animation-name: heroSlideUp;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-delay: 500ms;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+@keyframes heroSlideUp {
+  0% {
+    transform: translateY(6rem);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 #hero h1 {
