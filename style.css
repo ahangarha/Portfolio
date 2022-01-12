@@ -167,6 +167,8 @@ header .menu-toggle {
   background: white;
   border: 1px solid #dfe1e6;
   border-radius: 1rem;
+  transition-duration: 300ms;
+  transition-property: border-color, box-shadow;
 }
 
 .works-card:hover {
