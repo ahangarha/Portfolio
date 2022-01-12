@@ -355,16 +355,19 @@ header .menu-toggle {
 }
 
 #contact {
-  display: flex;
-  flex-direction: column;
-  gap: 1.25rem;
-  text-align: center;
   background:
     var(--primary-b400)
     url(./assets/img/contact\ form\ shapes-mobile.png) right 2rem no-repeat;
   position: relative;
   border-top-left-radius: 5rem;
   padding: 7.125rem 1.5rem;
+}
+
+#contact .wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  text-align: center;
   color: white;
 }
 
@@ -494,5 +497,30 @@ header .menu-toggle {
     flex-direction: column;
     align-items: start;
     min-width: 122px;
+  }
+
+  #contact {
+    background:
+      var(--primary-b400)
+      url(./assets/img/contact-form\ -bg-shapes.svg) top 5rem center no-repeat;
+    background-size: 90%;
+  }
+
+  #contact .wrapper {
+    max-width: 36rem;
+    align-items: center;
+  }
+
+  #contact form {
+    align-items: center;
+    width: 28rem;
+  }
+
+  #contact form > *:not(.btn) {
+    width: 100%;
+  }
+
+  #contact form .btn {
+    align-self: center;
   }
 }
