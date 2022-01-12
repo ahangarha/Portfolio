@@ -323,7 +323,7 @@ header .menu-toggle {
   color: var(--neutrals-n300);
 }
 
-#about #about ul.skill-sets > li.active {
+#about ul.skill-sets > li.active {
   border-bottom: none;
 }
 
@@ -501,20 +501,23 @@ header .menu-toggle {
   }
 
   #about {
+    padding: 8.875rem 1.5rem 8.375rem;
     border-top-right-radius: 9rem;
   }
 
   #about .wrapper {
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
     gap: 1.5rem;
   }
 
-  #about .top {
-    width: 40%;
+  #about .top h2 {
+    font-size: 2.5rem;
+    line-height: 3.25rem;
   }
 
-  #about .skill-list {
-    width: 60%;
+  #about .top .action {
+    margin-top: 0.75rem;
   }
 
   #about ul.skill-sets > li .skill-items {
