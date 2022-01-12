@@ -15,6 +15,8 @@
   --primary-b200: #a7aeff;
   --primary-b400: #6070ff;
   --primary-b300: #7f8cff;
+  --header-height-mobile: 3rem;
+  --header-height-desktop: 4.5rem;
 }
 
 * {
@@ -32,6 +34,7 @@ body {
   color: var(--neutrals-n800);
   font-family: Poppins, Arial, Helvetica, sans-serif;
   background-color: var(--primary-b50);
+  margin-top: var(--header-height-mobile);
 }
 
 .btn {
@@ -69,6 +72,23 @@ body {
 
 header {
   background: white;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9;
+}
+
+header .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  height: var(--header-height-desktop);
+  padding: 0.25rem 1.5rem;
+  width: 100%;
 }
 
 .navbar > * {
@@ -85,15 +105,6 @@ header {
   100% {
     transform: translateY(0);
   }
-}
-
-header .navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: relative;
-  height: 3rem;
-  padding: 0.25rem 1.5rem;
 }
 
 header .logo a {
@@ -481,13 +492,17 @@ header .menu-toggle {
 }
 
 @media (min-width: 992px) {
+  body {
+    margin-top: var(--header-height-desktop);
+  }
+
   .container > * {
     max-width: 1155px;
     margin: auto;
   }
 
-  header {
-    height: 4.5rem;
+  header .navbar {
+    height: var(--header-height-desktop);
   }
 
   header nav {
