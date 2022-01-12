@@ -2,7 +2,10 @@
 
 # Portfolio
 
-> This is an ongoing project for making a professional portfolio
+> This is an educational project for making a professional portfolio
+
+## Screenshots
+[![screenshot](screenshot-small.png)](screenshot-large.png)
 
 ## Built With
 
@@ -17,6 +20,7 @@ By now, the project is a static HTML/CSS and doesn't need any steps for build.
 👤 **Mostafa Ahangarha**
 
 - GitHub: [@ahangarha](https://github.com/ahangarha)
+- Mastodon [@ahangarha@mas.to](https://mas.to/@ahangarha)
 - Twitter: [@ahangarha](https://twitter.com/ahangarha)
 - LinkedIn: [ahangarha](https://linkedin.com/in/ahangarha)
 
