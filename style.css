@@ -300,6 +300,35 @@ header .menu-toggle {
   display: flex;
 }
 
+#about .btn {
+  animation-name: shakeButton;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes shakeButton {
+  0% {
+    transform: translateX(3px);
+  }
+
+  2% {
+    transform: translateX(-6px);
+  }
+
+  4% {
+    transform: translateX(3px);
+  }
+
+  6% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
 #about .skill-list ul {
   list-style: none;
   padding: 0;
