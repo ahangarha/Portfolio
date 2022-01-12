@@ -480,6 +480,7 @@ header .menu-toggle {
   border: 1px solid #cfd8dc;
   font-size: 1.0625rem;
   color: var(--neutrals-n800);
+  resize: none;
 }
 
 #contact form input::placeholder,
