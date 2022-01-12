@@ -96,7 +96,7 @@ header .menu-toggle {
 }
 
 #hero {
-  background: white url(./assets/img/header-shapes\ mobile.png) center 0 no-repeat;
+  background: white url(./assets/img/header-shapes-mobile.svg) center 0 no-repeat;
   min-height: 75vh;
   background-size: 100%;
   border-bottom-left-radius: 5rem;
@@ -357,7 +357,7 @@ header .menu-toggle {
 #contact {
   background:
     var(--primary-b400)
-    url(./assets/img/contact\ form\ shapes-mobile.png) right 2rem no-repeat;
+    url(./assets/img/contact-form-shapes-mobile.svg) right 2rem no-repeat;
   position: relative;
   border-top-left-radius: 5rem;
   padding: 7.125rem 1.5rem;
