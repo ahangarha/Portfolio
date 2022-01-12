@@ -116,7 +116,6 @@ header .menu-toggle {
 #hero h1 {
   font-size: 2.5rem;
   line-height: 3.25rem;
-  margin: 0;
 }
 
 #hero p {
@@ -451,10 +450,23 @@ header .menu-toggle {
   #hero {
     background: white url(./assets/img/Header\ bg.svg) center 0 no-repeat;
     background-size: 100%;
+    border-bottom-left-radius: 9rem;
   }
 
   #hero .wrapper {
     width: 75%;
+    max-width: 58rem;
+  }
+
+  #hero h1 {
+    font-size: 3rem;
+    line-height: 3.75rem;
+    max-width: 24rem;
+  }
+
+  #hero p {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 
   .works-card {
@@ -474,6 +486,10 @@ header .menu-toggle {
 
   .works-card:nth-child(even) .info {
     order: -1;
+  }
+
+  #about {
+    border-top-right-radius: 9rem;
   }
 
   #about .wrapper {
@@ -504,6 +520,7 @@ header .menu-toggle {
       var(--primary-b400)
       url(./assets/img/contact-form\ -bg-shapes.svg) top 5rem center no-repeat;
     background-size: 90%;
+    border-top-left-radius: 9rem;
   }
 
   #contact .wrapper {
