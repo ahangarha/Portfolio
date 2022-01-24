@@ -1,25 +1,27 @@
 const mobileMenu = document.querySelector('.mobile-menu');
 
+function toggleMenu() {
+  mobileMenu.style.display = mobileMenu.style.display === 'block' ? 'none' : 'block';
+  document.body.classList.toggle('blury');
+}
+
 document.querySelector('.menu-toggle').addEventListener(
   'click', () => {
-    mobileMenu.style.display = 'block';
-    document.body.classList.toggle('blury');
+    toggleMenu();
   },
 );
 
 document.getElementById('close-mobile-menu-btn').addEventListener(
   'click', (event) => {
     event.preventDefault();
-    mobileMenu.style.display = 'none';
-    document.body.classList.toggle('blury');
+    toggleMenu();
   },
 );
 
 document.querySelectorAll('.mobile-menu-content li a').forEach(
   (link) => {
     link.addEventListener('click', () => {
-      mobileMenu.style.display = 'none';
-      document.body.classList.toggle('blury');
+      toggleMenu();
     });
   },
 );
