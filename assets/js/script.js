@@ -1,10 +1,10 @@
 const mobileMenu = document.querySelector('.mobile-menu');
 
 document.querySelector('.menu-toggle').addEventListener(
-  'click', (event) => {
+  'click', () => {
     mobileMenu.style.display = 'block';
     document.body.classList.toggle('blury');
-  }
+  },
 );
 
 document.getElementById('close-mobile-menu-btn').addEventListener(
@@ -12,14 +12,14 @@ document.getElementById('close-mobile-menu-btn').addEventListener(
     event.preventDefault();
     mobileMenu.style.display = 'none';
     document.body.classList.toggle('blury');
-  }
+  },
 );
 
 document.querySelectorAll('.mobile-menu-content li a').forEach(
-  link => {
-    link.addEventListener('click', (event) => {
+  (link) => {
+    link.addEventListener('click', () => {
       mobileMenu.style.display = 'none';
       document.body.classList.toggle('blury');
     });
-  }
+  },
 );
