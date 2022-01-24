@@ -132,6 +132,10 @@ header .menu-toggle {
   cursor: pointer;
 }
 
+.mobile-menu {
+  display: none;
+}
+
 .blended-bg {
   background-color: var(--primary-b400);
   z-index: 10;
