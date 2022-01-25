@@ -538,6 +538,10 @@ header .menu-toggle {
   align-self: start;
 }
 
+.blury {
+  overflow: hidden;
+}
+
 .blury section,
 .blury header {
   filter: blur(0.5rem);
