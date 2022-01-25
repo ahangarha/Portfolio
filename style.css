@@ -554,14 +554,12 @@ header .menu-toggle {
 #work-popup {
   position: fixed;
   inset: 0;
-  max-width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 11;
   padding: 3.125rem 1rem;
   height: auto;
-  overflow-y: auto;
 }
 
 #work-popup .work-popup-content {
@@ -572,8 +570,10 @@ header .menu-toggle {
   display: flex;
   flex-direction: column;
   gap: 1.75rem;
-  max-height: 95vh;
+  max-height: 90vh;
+  max-width: 992px;
   position: relative;
+  overflow-y: auto;
 }
 
 #work-popup .work-popup-content h2 {
