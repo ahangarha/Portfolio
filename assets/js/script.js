@@ -63,6 +63,9 @@ const works = [
 
 const worksSection = document.getElementById('works');
 
+// Remove warning for javascript being disabled on the browser
+worksSection.innerHTML = '';
+
 works.forEach((work) => {
   let techs = '';
   work.technologies.forEach((tech) => { techs += `<li>${tech}</li>`; });
