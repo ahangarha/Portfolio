@@ -547,10 +547,6 @@ header .menu-toggle {
   filter: blur(0.5rem);
 }
 
-#popup-wrapper {
-  display: none;
-}
-
 #work-popup-wrapper .blended-bg {
   background-color: var(--neutrals-n50);
 }

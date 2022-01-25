@@ -65,7 +65,6 @@ const worksSection = document.getElementById('works');
 
 works.forEach((work) => {
   let techs = '';
-
   work.technologies.forEach((tech) => { techs += `<li>${tech}</li>`; });
 
   worksSection.innerHTML += `<div class="works-card">
@@ -91,9 +90,66 @@ works.forEach((work) => {
           </ul>
 
           <div class="action">
-            <a href="" class="btn" id="${work.name}"> See Project </a>
+            <a href="#" class="btn" id="${work.name}"> See Project </a>
           </div>
         </div>
       </div>
     `;
+});
+
+works.forEach((work) => {
+  let techs = '';
+  work.technologies.forEach((tech) => { techs += `<li>${tech}</li>`; });
+
+  document.getElementById(work.name).addEventListener(
+    'click',
+    (event) => {
+      event.preventDefault();
+      document.body.classList.toggle('blury');
+
+      document.getElementById('popup-wrapper').innerHTML = `
+      <div id="work-popup-wrapper" class="">
+        <div class="blended-bg"></div>
+        <div id="work-popup">
+          <div class="work-popup-content">
+            <a href="#" id="close-popup-btn" onclick=""><img src="./assets/img/icon-close-dark.svg" alt=""></a>
+            <div>
+              <h2>${work.name}</h2>
+              <div class="meta">
+                <span>canopy</span>
+                <i class="fa fa-circle"></i>
+                <span>Back End Dev</span>
+                <i class="fa fa-circle"></i>
+                <span>2015</span>
+              </div>
+            </div>
+
+            <img class="work-image" src="${work.imageURL}" alt="Project 1 snapshot" />
+            
+            <div class="info">
+              <p class="description">
+                ${work.description}
+              </p>
+              
+              <div class="techs-n-action">
+                <ul class="techs">
+                  ${techs}
+                </ul>
+                <div class="action">
+                  <a href="${work.liveURL}" target="_blank" class="btn">See Live <i class="fa fa-link"></i></a>
+                  <a href="${work.sourceURL}" target="_blank" class="btn">See Source <i class="fa fa-github"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>`;
+
+      document.getElementById('close-popup-btn').addEventListener('click', (event) => {
+        event.preventDefault();
+        document.getElementById('popup-wrapper').innerHTML = '';
+        document.body.classList.toggle('blury');
+      });
+    },
+  );
 });
