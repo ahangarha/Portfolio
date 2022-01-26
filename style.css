@@ -534,6 +534,12 @@ header .menu-toggle {
   color: var(--neutrals-n60);
 }
 
+#contact .error-message {
+  color: rgb(255, 174, 0);
+  font-weight: bold;
+  text-shadow: 1px 1px 2px #0007;
+}
+
 #contact form .btn {
   align-self: start;
 }
