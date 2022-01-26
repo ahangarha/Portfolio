@@ -192,9 +192,16 @@ if (storageAvailable('localStorage')) {
     email: '',
     message: '',
   };
+  const localData = window.localStorage.getItem('contactFormData');
+
+  if (localData) {
+    Object.assign(contactFormData, JSON.parse(localData));
+  }
 
   const fields = document.querySelectorAll('#contact input, #contact textarea');
+
   fields.forEach((field) => {
+    field.value = contactFormData[field.name];
     field.addEventListener('input', () => {
       contactFormData[field.name] = field.value;
       window.localStorage.setItem('contactFormData', JSON.stringify(contactFormData));
