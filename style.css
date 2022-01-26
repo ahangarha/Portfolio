@@ -23,6 +23,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
 }
 
 html {
@@ -32,7 +33,6 @@ html {
 body {
   font-size: 16px;
   color: var(--neutrals-n800);
-  font-family: Poppins, Arial, Helvetica, sans-serif;
   background-color: var(--primary-b50);
   margin-top: var(--header-height-mobile);
 }
@@ -532,6 +532,12 @@ header .menu-toggle {
 #contact form input::placeholder,
 #contact form textarea::placeholder {
   color: var(--neutrals-n60);
+}
+
+#contact .error-message {
+  color: rgb(255, 174, 0);
+  font-weight: bold;
+  text-shadow: 1px 1px 2px #0007;
 }
 
 #contact form .btn {
