@@ -227,8 +227,8 @@
         </p>
 
         <form action="https://formspree.io/f/xrgjezzq" method="POST">
-          <input type="text" required placeholder="Your name" maxlength="30" />
-          <input type="email" required placeholder="Your email" />
+          <input type="text" name="name" required placeholder="Your name" maxlength="30" />
+          <input type="email" name="email" required placeholder="Your email" />
           <textarea
             name="message"
             required
@@ -237,7 +237,6 @@
             placeholder="Write your message here"
             maxlength="500"
           ></textarea>
-          <div class="error-message">Please insert email address in lowercase!</div>
           <button class="btn" type="submit">Get In Touch</button>
         </form>
       </div>

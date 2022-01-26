@@ -156,3 +156,18 @@ works.forEach((work) => {
     },
   );
 });
+
+const contactForm = document.querySelector('#contact form');
+
+contactForm.addEventListener('submit', (event) => {
+  event.preventDefault();
+
+  if (contactForm.elements.email.value === contactForm.elements.email.value.toLowerCase()) {
+    contactForm.submit();
+  } else {
+    const errorMessage = document.createElement('div');
+    errorMessage.classList.add('error-message');
+    errorMessage.textContent = 'Please insert email address in lowercase!';
+    contactForm.insertBefore(errorMessage, contactForm.querySelector('button'));
+  }
+});
