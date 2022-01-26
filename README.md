@@ -12,7 +12,9 @@ A live version of this project can be [seen here](https://ahangarha.github.io/Po
 
 ## Built With
 
-- HTML/CSS
+- HTML
+- Pure CSS
+- Pure JavaScript
 
 ## Getting Started
 
