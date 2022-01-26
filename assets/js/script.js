@@ -171,3 +171,33 @@ contactForm.addEventListener('submit', (event) => {
     contactForm.insertBefore(errorMessage, contactForm.querySelector('button'));
   }
 });
+
+// Handle form data in the browser's localstorage
+function storageAvailable(type) {
+  let storage;
+  try {
+    storage = window[type];
+    const x = '__storage_test__';
+    storage.setItem(x, x);
+    storage.removeItem(x);
+    return true;
+  } catch (e) {
+    return false;
+  }
+}
+
+if (storageAvailable('localStorage')) {
+  const contactFormData = {
+    name: '',
+    email: '',
+    message: '',
+  };
+
+  const fields = document.querySelectorAll('#contact input, #contact textarea');
+  fields.forEach((field) => {
+    field.addEventListener('input', () => {
+      contactFormData[field.name] = field.value;
+      window.localStorage.setItem('contactFormData', JSON.stringify(contactFormData));
+    });
+  });
+}
