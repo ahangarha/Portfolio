@@ -157,10 +157,14 @@ works.forEach((work) => {
   );
 });
 
+// Contact Form Validation
 const contactForm = document.querySelector('#contact form');
 
 contactForm.addEventListener('submit', (event) => {
   event.preventDefault();
+
+  const oldErrorMessages = contactForm.querySelectorAll('.error-message');
+  oldErrorMessages.forEach((errMsg) => errMsg.remove());
 
   if (contactForm.elements.email.value === contactForm.elements.email.value.toLowerCase()) {
     contactForm.submit();
